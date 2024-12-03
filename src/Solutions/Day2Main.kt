@@ -24,7 +24,7 @@ private fun readFile (fileName: String){
 }
 
 private fun part1(){
-    var count: Int = 0
+    var count = 0
     for(line in lines){
         if(isSafe(line)){
             count++
@@ -34,7 +34,7 @@ private fun part1(){
 }
 
 private fun part2(){
-    var count: Int = 0
+    var count = 0
     for(line in lines){
         for(i in 0 until line.size){
             val newLine = mutableListOf<Int>()
@@ -60,5 +60,5 @@ fun isSafe(line: MutableList<Int>): Boolean{
 }
 
 fun main(args: Array<String>) {
-    day2Main();
+    day2Main()
 }
