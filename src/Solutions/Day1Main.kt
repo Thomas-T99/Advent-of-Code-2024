@@ -1,4 +1,4 @@
-package day1
+package Solutions
 
 import java.io.File
 import java.util.*
@@ -8,8 +8,8 @@ private val leftList: MutableList<Int> = mutableListOf();
 private val rightList: MutableList<Int> = mutableListOf();
 private val rightMap: MutableMap<Int, Int> = mutableMapOf();
 
-private fun main() {
-    readFile("C:\\Users\\thoma\\IdeaProjects\\Advent of Code 2024\\src\\day1\\Day1Input");
+private fun day1Main() {
+    readFile("C:\\Users\\thoma\\IdeaProjects\\Advent of Code 2024\\Inputs\\Day1Input");
     part1()
     part2()
 }
@@ -50,5 +50,5 @@ private fun part2(){
 }
 
 fun main(args: Array<String>) {
-    main();
+    day1Main();
 }
