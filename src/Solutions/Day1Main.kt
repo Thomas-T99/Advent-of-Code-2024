@@ -24,19 +24,19 @@ private fun readFile (fileName: String){
             val count = rightMap[right]
             rightMap[right] = count!! + 1
         } else {
-            rightMap[right] = 1;
+            rightMap[right] = 1
         }
     }
 }
 
 private fun part1(){
-    leftList.sort();
-    rightList.sort();
-    var total = 0;
+    leftList.sort()
+    rightList.sort()
+    var total = 0
     for (i in 0 until leftList.size) {
-        total += Math.abs(leftList[i] - rightList[i]);
+        total += Math.abs(leftList[i] - rightList[i])
     }
-    System.out.println("Part 1: " + total +"n");
+    println("Part 1: " + total +"n")
 }
 
 private fun part2(){
@@ -46,9 +46,9 @@ private fun part2(){
             total += (rightMap[i]!! * i)
         }
     }
-    System.out.println("Part 2: " + total);
+    println("Part 2: $total")
 }
 
 fun main(args: Array<String>) {
-    day1Main();
+    day1Main()
 }
